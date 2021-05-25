@@ -1,0 +1,89 @@
+body
+{
+    font-family: 'roboto', sans-serif;
+    background-image: url(img/img3.jpg);
+    background-position: 100%;
+    background-attachment: fixed;
+}
+.sidebar
+{
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all .5s ease;
+    background: rgb(185, 116, 116);
+    opacity: 75%;
+}
+.sidebar header
+{
+    font-size: 22px;
+    color: azure;
+    background: rgb(175, 86, 86);
+    text-align: center;
+    line-height: 71px;
+    user-select: none;
+    transition: all .5s ease;
+}
+.sidebar ul a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: azure;
+    line-height: 65px;
+    font-size: 19px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(250, 164, 164);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition:.4s;
+}
+ul:hover li
+{
+    padding-left: 50px;
+}
+#check
+{
+    display: none;
+}
+label .btn1,label .btn2
+{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px black;
+    background: rgb(156, 98, 98);
+}
+label .btn1
+{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: wheat;
+    padding: 6px 11px;
+    transition: all .5s;
+}
+label .btn2
+{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: wheat;
+    padding: 4px 9px;
+}
+/* #check:checked ~ .sidebar
+{
+    left: 0;
+}
+#check:checked ~ label .btn1
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked~ label .btn2
+{
+    left: 195px
+} */
